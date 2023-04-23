@@ -39,7 +39,6 @@
     top: 0;
     left: 0;
     width: 20rem;
-    height: 45vh;
     background: rgba($color-grey-light-2, 0.5);
     border-radius: 0 0 5px 0;
     display: flex;
@@ -51,6 +50,7 @@
 
     &-link{
       text-decoration: none;
+      transition: all .5;
       &:visited,
       &:link {
         color: $color-secondary;
@@ -89,40 +89,5 @@
     font-family: "Montserrat";
   }
  
-
 }
 
-.hero  {
-  &__header {
-    &--libra {
-      text-transform: uppercase;
-      font-size: 20rem;
-      font-weight: 100;
-      font-family: "Montserrat";
-      position: absolute;
-      top: 20vh;
-      left:20vw;
-      color: $color-primary;
-  }
-  &--subheading {
-    text-transform: uppercase;
-    font-size: 13rem;
-    font-weight: 800;
-    font-family: "Sofia Sans";
-    position: absolute;
-    top: 33.5vh;
-    left: 51.5vw;
-    color: rgba($color-secondary-light, .8);
-}
-
-
-  }
-
-  &__logo {
-    width: 50vw;
-    height: 30vh;
-    position: absolute;
-    top: 22vh;
-    left: 20vw;
-  }
-}

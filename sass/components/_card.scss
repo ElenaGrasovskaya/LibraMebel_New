@@ -1,0 +1,76 @@
+.project-card {
+  width: 40rem;
+  display: grid;
+  grid-template-columns: 3rem 1fr 3rem;
+  grid-template-rows: 3fr 3rem 3rem 0.7fr;
+  background-color: $color-secondary-light;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  &__photo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 40rem;
+    height: 30rem;
+  
+
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__name {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: $color-grey-light-1;
+    position: relative;
+
+    &-text {
+      font-family: "Montserrat";
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-weight: 300;
+      display: flex;
+      width: max-content;
+      color: $color-secondary;
+      @include centerDiv;
+    }
+  }
+
+  &__description {
+    margin-top: 1rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    list-style: square;
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    margin-left: 2rem;
+  }
+
+  &__link {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: right;
+    transition: all .5s ease-out;
+
+  }
+  &__link:hover {
+    transform: translateX(5px);
+  }
+
+  &__arrow {
+    margin-top: 1rem;
+    height: 3rem;
+    width: 3rem;
+
+  }
+}
