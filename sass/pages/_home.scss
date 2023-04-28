@@ -1,19 +1,44 @@
 .hero {
     width: 100%;
+    height: 99%;
     
 }
 
 .projects {
     width: 100%;
-    height: 100vh;
+   
     background-color: $color-grey-light-1;
     &-container {
-        margin: 0 5%;
+        padding: 0 5% 5% 5%;
         display: flex;
         gap: 5rem;
         justify-content: center;
         flex-wrap: wrap;
 
     }
+    &__header {
+        color: $color-secondary;
+    }
+
+    
+}
+
+.gallery {
+    width: 100%;
+    background-color: $color-secondary;
+    &__container {
+        padding: 0 5% 3% 5%;
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__header {
+        color: $color-grey-light-1;
+    }
+
+
+
     
 }

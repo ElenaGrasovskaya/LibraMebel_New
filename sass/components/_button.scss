@@ -1,0 +1,24 @@
+.btn {
+    display: block;
+    margin: 0 auto;
+    background-color: $color-secondary-light;
+    color: $color-primary;
+    height: 5rem;
+    padding: 0 3rem;    
+    border-radius: .5rem;
+    font-family: "Sofia Sans";
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: none;
+    border: 1px solid transparent;
+
+    &:focus, &:hover {
+        border: 1px solid $color-primary;
+
+    }
+
+    &:focus {
+        background-color: $color-secondary-dark;
+    }
+
+}
