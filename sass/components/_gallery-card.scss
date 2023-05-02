@@ -1,13 +1,17 @@
 .gallery-card {
   animation-duration: .5s;
   animation-name: reveal;
-    max-width: 30rem;
+  transition: opacity .5s;
+    width: 30rem;
+    max-height: 20rem;
+    overflow: hidden;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     &__image {
       width: 100%;
       height: 100%;
       border-radius: .5rem;
+      object-fit: cover;
     }
   
     &__description {

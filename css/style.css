@@ -202,16 +202,37 @@ body {
     height: 3rem;
     width: 3rem; }
 
+.gallery__nav {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin: 0 auto 3rem auto; }
+
+.gallery__container {
+  min-height: 80rem;
+  padding: 0 5% 3% 5%;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.gallery__header {
+  color: #D9D9D9; }
+
 .gallery-card {
   animation-duration: .5s;
   animation-name: reveal;
-  max-width: 30rem;
+  transition: opacity .5s;
+  width: 30rem;
+  max-height: 20rem;
+  overflow: hidden;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; }
   .gallery-card__image {
     width: 100%;
     height: 100%;
-    border-radius: .5rem; }
+    border-radius: .5rem;
+    object-fit: cover; }
   .gallery-card__description {
     width: 100%;
     padding: 1rem 1rem 1rem 5rem;
@@ -360,6 +381,48 @@ body {
   top: 22vh;
   left: 20vw; }
 
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 10000;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  transition: opacity 0.5s; }
+  .fullscreen__ON {
+    opacity: 1;
+    height: 100vh;
+    width: 100vw; }
+  .fullscreen__OFF {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden; }
+  .fullscreen__close-button, .fullscreen__prev-button, .fullscreen__next-button {
+    background-color: transparent;
+    border: none;
+    transition: all .3s; }
+    .fullscreen__close-button:focus, .fullscreen__close-button:hover, .fullscreen__prev-button:focus, .fullscreen__prev-button:hover, .fullscreen__next-button:focus, .fullscreen__next-button:hover {
+      filter: hue-rotate(60deg); }
+  .fullscreen__close-button {
+    position: absolute;
+    top: 3rem;
+    right: 5rem; }
+  .fullscreen__prev-button {
+    position: absolute;
+    top: 50vh;
+    left: 5rem; }
+  .fullscreen__next-button {
+    position: absolute;
+    top: 50vh;
+    right: 5rem; }
+  .fullscreen__icon-img {
+    height: 3rem;
+    width: 3rem; }
+
 .navigation {
   position: absolute;
   top: 0;
@@ -439,11 +502,3 @@ body {
 .gallery {
   width: 100%;
   background-color: #22485C; }
-  .gallery__container {
-    padding: 0 5% 3% 5%;
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    flex-wrap: wrap; }
-  .gallery__header {
-    color: #D9D9D9; }

@@ -1,0 +1,24 @@
+.gallery {
+    &__nav {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        margin: 0 auto 3rem auto;
+
+    }
+    &__container {
+        min-height: 80rem;
+        padding: 0 5% 3% 5%;
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__header {
+        color: $color-grey-light-1;
+    }
+
+
+
+}
