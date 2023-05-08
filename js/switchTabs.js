@@ -1,5 +1,5 @@
-import checkMaxPage from "./checkMaxPage.js";
-import openModal from "./openModal.js";
+import checkMaxPage from "./modules/checkMaxPage.js";
+import openModal from "./modules/openModal.js";
 (() => {
     
     const tabHandler = (tabName) => {

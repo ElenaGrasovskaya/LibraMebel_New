@@ -1,5 +1,5 @@
-import checkMaxPage from "./checkMaxPage.js";
-import openModal from "./openModal.js";
+import checkMaxPage from "./modules/checkMaxPage.js";
+import openModal from "./modules/openModal.js";
 (() => {
 
     const moreEventHandler = () => {
@@ -14,17 +14,12 @@ import openModal from "./openModal.js";
             newCard.className = "gallery-card";
 
             newCard.innerHTML = newGalleryPage[i].innerHTML.replaceAll("page1", `page${pageNum + 1}`);
+            newCard.addEventListener("click", () => openModal(newCard), false);
 
             galleryContainer.appendChild(newCard);
         }
 
-        [...galleryContainer.children].forEach(el => {
-            el.addEventListener("click", () => openModal(el), false);
-        });
-
         checkMaxPage();
-
-
     }
     const morePhotoButton = document.getElementById("more-photo");
 
