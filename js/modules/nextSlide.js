@@ -3,12 +3,9 @@ import viewSubslide from "./viewSubslide.js";
 
 const nextSlide = () => {
 
-
     const fullScreenImage = document.getElementById("fullscreen__image");
     const curentThumbnails = document.getElementById("fullscreen__thumbnails");
     //fullScreenImage.style.opacity = 0;
-
-
 
     const newImageData = fullScreenImage.src.split('\/');
     let currentPageNum = newImageData[7];
