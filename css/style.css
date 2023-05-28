@@ -50,7 +50,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #22485C; }
+  background-color: #7195A8; }
 
 ::selection {
   color: #EFEFEF; }
@@ -237,7 +237,7 @@ body {
     width: 100%;
     padding: 1rem 1rem 1rem 5rem;
     color: #EFEFEF;
-    background-color: rgba(113, 149, 168, 0.8);
+    background-color: rgba(79, 104, 117, 0.8);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -268,18 +268,19 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 79rem;
   width: 100%;
   z-index: -1;
   overflow: hidden; }
   .bg-video__content {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     overflow: hidden; }
 
 .form {
   position: absolute;
-  top: 60rem;
+  top: 55%;
   right: 0;
   width: 30vw;
   background: rgba(238, 238, 238, 0.5);
@@ -360,8 +361,9 @@ body {
   font-weight: 100;
   font-family: "Montserrat";
   position: absolute;
-  top: 20vh;
-  left: 20vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #B0FF07; }
 
 .hero__header--subheading {
@@ -452,6 +454,67 @@ body {
     height: 3rem;
     width: 3rem; }
 
+.recommendations__container {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  text-align: justify; }
+
+.recommendations__header-number {
+  font-size: 10rem;
+  line-height: 1rem;
+  color: #64802A;
+  display: inline-block;
+  transform: translateY(2.5rem); }
+
+.recommendations__text {
+  margin: 2rem 0;
+  font-family: "Montserrat";
+  font-size: 1.6rem; }
+
+.recommendations__sub-header {
+  text-align: center;
+  transform: translateY(-4rem);
+  width: 60%;
+  margin: 0 auto;
+  font-size: 3rem;
+  font-family: "Sofia Sans";
+  color: #333; }
+
+.recommendations__list {
+  transform: translateX(2rem);
+  font-weight: 600;
+  list-style: square; }
+
+.recommendations__header-4 {
+  font-size: 2.2rem;
+  font-family: "Sofia Sans";
+  color: #333; }
+
+.recommendations__header-5 {
+  font-size: 2rem;
+  font-family: "Sofia Sans";
+  color: #333; }
+
+.recommendations__styles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4rem;
+  list-style: none;
+  margin: 2rem 0; }
+  .recommendations__styles-item {
+    width: 30%;
+    text-align: justify; }
+  .recommendations__styles-img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 0.5rem; }
+
 .navigation {
   position: absolute;
   top: 0;
@@ -463,6 +526,10 @@ body {
   background: rgba(17, 17, 17, 0.8);
   gap: 1rem;
   height: 7rem; }
+  .navigation__logo {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem auto; }
   .navigation__element {
     display: block;
     font-family: "Sofia Sans Condensed";
@@ -476,8 +543,9 @@ body {
     .navigation__link:hover, .navigation__link:active {
       color: #B0FF07; }
   .navigation__side {
-    padding: 5rem 0 2rem 2rem;
+    padding: 2rem;
     position: absolute;
+    text-align: center;
     top: 0;
     left: 0;
     width: 20rem;
@@ -487,6 +555,7 @@ body {
     flex-direction: column;
     list-style: none; }
     .navigation__side-link {
+      text-transform: uppercase;
       text-decoration: none;
       transition: all .5; }
       .navigation__side-link:visited, .navigation__side-link:link {
@@ -518,7 +587,10 @@ body {
 
 .projects {
   width: 100%;
-  background-color: #D9D9D9; }
+  background-color: #7195A8;
+  background-image: url(/img/slanted-gradient_dark.svg);
+  background-size: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; }
   .projects-container {
     padding: 0 5% 5% 5%;
     display: flex;
@@ -529,5 +601,17 @@ body {
     color: #22485C; }
 
 .gallery {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   width: 100%;
-  background-color: #22485C; }
+  background-color: #22485C;
+  padding-bottom: 8rem;
+  background-image: url(/img/slanted-gradient1.svg);
+  background-size: cover; }
+
+.recommendations {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  width: 100%;
+  background-color: #D9D9D9;
+  padding: 3rem 0 6rem 0; }
+  .recommendations__header {
+    color: #22485C; }

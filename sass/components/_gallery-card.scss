@@ -20,7 +20,7 @@
       
   
       color: $color-white;
-      background-color: rgba($color-secondary-light, 0.8);
+      background-color: rgba($color-secondary-dark, 0.8);
       position: absolute;
       bottom: 0;
       left: 0;
@@ -40,8 +40,6 @@
         line-height: 2rem;
         border-radius: 0 0 .5rem .5rem;
     }
-    &__list-item {
-    }
   }
   
   .gallery-card:hover .gallery-card__description {
@@ -51,9 +49,6 @@
  
   }
 
-  .gallery-card:hover {
-    
-  }
 
   @keyframes reveal {
     from {

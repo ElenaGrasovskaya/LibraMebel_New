@@ -1,0 +1,73 @@
+.recommendations {
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: justify;
+  }
+  &__header-number {
+    font-size: 10rem;
+    line-height: 1rem;
+    color: $color-primary-dark;
+    display: inline-block;
+    transform: translateY(2.5rem);
+  }
+
+  &__text {
+    margin: 2rem 0;
+    font-family: "Montserrat";
+    font-size: 1.6rem;
+  }
+
+  &__sub-header {
+    text-align: center;
+    transform: translateY(-4rem);
+    width: 60%;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-family: "Sofia Sans";
+    color: $color-grey-dark-3;
+  }
+  &__list {
+    transform: translateX(2rem);
+    font-weight: 600;
+    list-style: square;
+  }
+
+  &__header {
+    &-4 {
+      font-size: 2.2rem;
+      font-family: "Sofia Sans";
+      color: $color-grey-dark-3;
+    }
+    &-5 {
+      font-size: 2rem;
+      font-family: "Sofia Sans";
+      color: $color-grey-dark-3;
+    }
+  }
+
+  &__styles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 4rem;
+    list-style: none;
+    margin: 2rem 0;
+
+    &-item {
+      width: 30%;
+      text-align: justify;
+    }
+
+    &-img {
+      width: 100%;
+      height: 30rem;
+      object-fit: cover;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border-radius: 0.5rem;
+    }
+  }
+}

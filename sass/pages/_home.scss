@@ -1,12 +1,15 @@
 .hero {
   width: 100%;
   height: 99%;
-}
+   }
 
 .projects {
   width: 100%;
+  background-color: $color-secondary-light;
+  background-image: url(/img/slanted-gradient_dark.svg);
+  background-size: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
-  background-color: $color-grey-light-1;
   &-container {
     padding: 0 5% 5% 5%;
     display: flex;
@@ -20,6 +23,21 @@
 }
 
 .gallery {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   width: 100%;
   background-color: $color-secondary;
+  padding-bottom: 8rem;
+  background-image: url(/img/slanted-gradient1.svg);
+  background-size: cover;
+}
+
+.recommendations {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  width: 100%;
+  background-color: $color-grey-light-1;
+  padding: 3rem 0 6rem 0;
+
+  &__header {
+    color: $color-secondary;
+  }
 }
