@@ -1,4 +1,6 @@
-.hero  {
+.hero  { 
+  border-bottom: 3px solid $color-primary;
+  position: relative;
     &__header {
       &--libra {
         text-transform: uppercase;

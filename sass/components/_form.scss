@@ -1,27 +1,40 @@
 .form {
   position: absolute;
-  top: 55%;
+
   right: 0;
-  width: 30vw;
+  bottom: 0;
+  width: 35rem;
+  transition: width .3s;
+  @include respond(tab-land) {
+   width: 7rem;
+  }
 
   background: rgba($color-grey-light-2, 0.5);
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 0;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   align-content: flex-start;
   padding: 2rem;
 
+
   form {
+ 
     display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 1rem;
     align-content: flex-start;
+   
+    @include respond(tab-land) {
+      
+      display: none;
+    }
   }
 
   &__input {
     height: 3rem;
-    width: 90%;
+    width: 100%;
     background-color: rgba($color-secondary-light, 0.5);
     border: none;
     font-family: "Montserrat";
@@ -42,7 +55,7 @@
 
   &__textarea {
     height: 6rem;
-    width: 90%;
+    width: 100%;
     background-color: rgba($color-secondary-light, 0.5);
     border: none;
     font-family: "Montserrat";
@@ -69,7 +82,7 @@
 
   &__button {
     height: 5rem;
-    width: 50%;
+    width: 100%;
     background-color: rgba($color-secondary, 0.5);
     color: $color-primary;
     border: none;
@@ -87,11 +100,39 @@
 }
 .social {
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
 
+  width: 100%;
+  justify-content: space-between;
+
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
+
+
+  
   &__icon {
     transform: translateY(1rem);
     height: 3rem;
+    width: 3rem;
     opacity: 0.5;
   }
+
+  &__link {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: $color-grey-dark-3;
+    text-decoration: none;
+
+    &:hover {
+      filter:invert(90%);
+    }
+    &:active, &:visited {
+      filter:invert(20%);
+    }
+  }
+
+
+
 }

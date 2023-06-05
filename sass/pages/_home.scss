@@ -1,6 +1,7 @@
 .hero {
   width: 100%;
   height: 99%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
    }
 
 .projects {
@@ -40,4 +41,32 @@
   &__header {
     color: $color-secondary;
   }
+}
+
+.about {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  width: 100%;
+  background-color: $color-secondary-dark;
+  padding: 3rem 10% 6rem 10%;
+
+  &__header {
+    color: $color-grey-light-1;
+  }
+}
+
+.contacts {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  width: 100%;
+  background-color: $color-grey-light-1;
+  padding: 3rem 0 6rem 0;
+
+  &__header {
+    color: $color-secondary-dark;
+  }
+}
+
+.footer  {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-color: $color-secondary-dark;
+  padding: 3rem 0 6rem 0;
 }

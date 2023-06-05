@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/ico" href="img/favicon/favicon.ico" />
 
@@ -34,10 +33,10 @@
             <a href="#recommendations" class="navigation__link">РЕКОМЕНДАЦІЇ</a>
           </li>
           <li class="navigation__element">
-            <a href="#" class="navigation__link">ПРО НАС</a>
+            <a href="#about" class="navigation__link">ПРО НАС</a>
           </li>
           <li class="navigation__element">
-            <a href="#" class="navigation__link">КОНТАКТИ</a>
+            <a href="#contacts" class="navigation__link">КОНТАКТИ</a>
           </li>
         </ul>
       </nav>
@@ -91,45 +90,17 @@
         </div>
         <div class="form">
           <form action="POST">
-            <div class="social">
-              <label class="form__label" for="user_info">Поспілкуємось?</label
-              ><a href="tel:+380936312232" class="social__link"
-                ><img
-                  src="img/phone.svg"
-                  alt="LibraMebel phone number"
-                  class="social__icon"
-              /></a>
-              <a href="tel:+380936312232" class="social__link"
-                ><img
-                  src="img/telegram.svg"
-                  alt="LibraMebel phone number"
-                  class="social__icon"
-              /></a>
-              <a href="tel:+380936312232" class="social__link"
-                ><img
-                  src="img/viber.svg"
-                  alt="LibraMebel phone number"
-                  class="social__icon"
-              /></a>
-              <a href="tel:+380936312232" class="social__link"
-                ><img
-                  src="img/instagram.svg"
-                  alt="LibraMebel phone number"
-                  class="social__icon"
-              /></a>
-              <a href="tel:+380936312232" class="social__link"
-                ><img
-                  src="img/facebook.svg"
-                  alt="LibraMebel phone number"
-                  class="social__icon"
-              /></a>
-            </div>
+
+              <label class="form__label" for="user_info">Поспілкуємось?
+
             <input
               class="form__input"
               type="text"
               placeholder="Ваш імейл чи телефон"
               name="user_info"
             />
+            </label
+              >
             <textarea
               class="form__textarea"
               type="text"
@@ -137,7 +108,49 @@
               name="user_question"
             ></textarea>
             <button class="form__button" type="submit">Відправити</button>
+       
           </form>
+          <div class="social">
+            <a href="tel:+380936312232" class="social__link"
+               ><img
+                 src="img/phone.svg"
+                 alt="LibraMebel phone number"
+                 class="social__icon"
+             /></a>
+
+             <a href="mailto:mebel.libra@gmail.com" class="social__link"
+               ><img
+                 src="img/mail.svg"
+                 alt="LibraMebel email"
+                 class="social__icon"
+             /></a>
+             <a href="https://t.me/springlord" class="social__link"
+               ><img
+                 src="img/telegram.svg"
+                 alt="LibraMebel telegram"
+                 class="social__icon"
+             /></a>
+             <a href="tel:+380936312232" class="social__link"
+               ><img
+                 src="img/viber.svg"
+                 alt="LibraMebel viber"
+                 class="social__icon"
+             /></a>
+             <a
+               href="https://www.instagram.com/libramebel/"
+               class="social__link"
+               ><img
+                 src="img/instagram.svg"
+                 alt="LibraMebel instagram"
+                 class="social__icon"
+             /></a>
+             <a href="tel:+380936312232" class="social__link"
+               ><img
+                 src="img/facebook.svg"
+                 alt="LibraMebel facebook"
+                 class="social__icon"
+             /></a>
+           </div>
         </div>
       </section>
       <section class="projects" id="projects">
@@ -443,7 +456,7 @@
           <h2 class="recommendations__header header-section">РЕКОМЕНДАЦІЇ</h2>
           <div class="recommendations__text">
             <h3 class="recommendations__sub-header">
-              Проєктуємо кухню у 3 кроки
+              Проєктуємо кухню у 3 сміливих кроки
             </h3>
             <p>
               Сьогодні вибір матеріалів та кольорів настільки величезний, що очі
@@ -464,11 +477,11 @@
               </h4>
               <p>
                 У
-                <a href="https://www.instagram.com/libramebel/" rel="nofollow"
+                <a href="https://www.instagram.com/libramebel/" class="recommendations__link rel="nofollow"
                   >Instagram</a
                 >
                 або
-                <a href="https://www.pinterest.com/" rel="nofollow"
+                <a href="https://www.pinterest.com/" class="recommendations__link rel="nofollow"
                   >Pinterest</a
                 >
                 можна знайти багато прикладів кухонь різних стилів і кольорів,
@@ -632,7 +645,7 @@
                 фасади по-різному. Щоб полегшити вибір відтінків або дерев'яного
                 малюнка, можна скористатися каталогами на сайтах виробників ДСП,
                 наприклад
-                <a href="https://www.egger.com/shop/ru_UA/" rel="nofollow"
+                <a href="https://www.egger.com/shop/ru_UA/" class="recommendations__link" rel="nofollow"
                   >egger.com</a
                 >. Однак жоден каталог не замінить перегляд зразка наживо, тому
                 що тільки на зразку можна дійсно побачити структуру мателіалу,
@@ -648,11 +661,14 @@
                 конструктором, Ви можете вибрати відтінок на який будете
                 орієнтуватися під час перебору зразків. Колір стільниці можна
                 підбирати під фасади кухні за допомогою того ж
-                <a href="https://www.egger.com/shop/ru_UA/" rel="nofollow"
+                <a
+                class="recommendations__link"
+                  href="https://www.egger.com/shop/ru_UA/"
+                  rel="nofollow"
                   >egger.com</a
                 >. Ознайомитись з різними варіантами акрилових або кварцових
                 стільниць можна
-                <a href="https://trans-stone.com.ua/" rel="nofollow">тут</a>.
+                <a href="https://trans-stone.com.ua/" class="recommendations__link" rel="nofollow">тут</a>.
                 Крім фасадів, стільницю можна підбирати під один із елементів
                 дизайну приміщення, таких як покриття на підлозі або робочої
                 стіни кухні.
@@ -711,7 +727,7 @@
               <p>
                 Ручки, їх наявність та розмір визначаються стилем майбутньої
                 кухні та вибираються наприкінці проектування. Їх бажано вибирати
-                там, де д них можна доторкнутися і додати до зразка обраного
+                там, де до них можна доторкнутися і додати до зразка обраного
                 фасаду, щоб оцінити розмір, зручність та поєднання фактур.
               </p>
               <p>
@@ -726,10 +742,216 @@
         </article>
       </section>
 
-      <section class="about"></section>
+      <section class="about" id="about">
+        <h2 class="about__header header-section">ПРО НАС</h2>
+        <article class="about__article">
+          <p class="about__text">
+            <span class="about__text-highlighted"
+              ><b>Ми команда однодумців</b></span
+            >
+            зі спільною метою -
+            <span class="about__text-highlighted"
+              ><b>створювати комфорт.</b></span
+            ><br />Для нас це означає поєднювати стильні дизайнерскі рішення із
+            функціональністю
+            <span class="about__text-highlighted"
+              ><b>сучасних механізмів</b></span
+            >, досвідом та конструкторським
+            <span class="about__text-highlighted"><b>професіналізмом</b></span>
+            для того, щоб створити вражаючий та максимально зручний інтер'єр.
+            Наша команда побудована за принципом
+            <span class="about__text-highlighted"><b>мережі</b></span
+            >, де кожна група відповідає за належний етап проекту та постійно
+            спілкується між собою за для
+            <span class="about__text-highlighted"
+              ><b>досягнення найліпшого результату.</b></span
+            >
+          </p>
+          <img
+            class="about__picture"
+            src="img/interior-design-team.webp"
+            alt=""
+          />
+        </article>
+      </section>
 
-      <section class="contacts"></section>
+      <section class="contacts" id="contacts">
+        <h2 class="contacts__header header-section">КОНТАКТИ</h2>
+        <!--The div element for the map -->
+        <div class="contacts__container">
+          <div class="contacts__description">
+            <ul class="contacts__list">
+              <li class="contacts__list-item">
+                <a href="tel:+380936312232" class="contacts__link"
+                  ><img
+                    src="img/phone.svg"
+                    alt="LibraMebel phone number"
+                    class="contacts__icon"
+                  />(093) 631-22-32&nbsp;</a
+                >
+              </li>
 
+              <li class="contacts__list-item">
+                <a href="tel:+380971595643" class="contacts__link"
+                  ><img
+                    src="img/phone.svg"
+                    alt="LibraMebel phone number"
+                    class="contacts__icon"
+                  />(097) 15-95-643&nbsp;</a
+                >
+              </li>
+              <li class="contacts__list-item">
+                <a href="https://t.me/springlord" class="contacts__link"
+                  ><img
+                    src="img/mail.svg"
+                    alt="LibraMebel telegram"
+                    class="contacts__icon"
+                  />mebel.libra@gmail.com</a
+                >
+              </li>
+
+              <li class="contacts__list-item">
+                <a href="https://t.me/springlord" class="contacts__link"
+                  ><img
+                    src="img/telegram.svg"
+                    alt="LibraMebel telegram"
+                    class="contacts__icon"
+                  />0936312232</a
+                >
+              </li>
+
+              <li class="contacts__list-item">
+                <a
+                  href="viber://chat?number=+380936312232/"
+                  class="contacts__link"
+                  ><img
+                    src="img/viber.svg"
+                    alt="LibraMebel viber"
+                    class="contacts__icon"
+                  />0936312232</a
+                >
+              </li>
+              <li class="contacts__list-item">
+                <a
+                  href="https://www.instagram.com/libramebel/"
+                  class="contacts__link"
+                  ><img
+                    src="img/instagram.svg"
+                    alt="LibraMebel instagram"
+                    class="contacts__icon"
+                  />instagram.com/LibraMebel</a
+                >
+              </li>
+              <li class="contacts__list-item">
+                <a
+                  href="https://www.facebook.com/LibraMebel/"
+                  class="contacts__link"
+                  ><img
+                    src="img/facebook.svg"
+                    alt="LibraMebel facebook"
+                    class="contacts__icon"
+                  />facebook.com/LibraMebel</a
+                >
+              </li>
+
+              <li class="contacts__list-item">
+                <a href="tel:+380936312232" class="contacts__link"
+                  ><img
+                    src="img/location.svg"
+                    alt="LibraMebel viber"
+                    class="contacts__icon"
+                  />
+                  Наша адреса: Одеса, вул Маршала Бабаджаняна, 40в к25</a
+                >
+              </li>
+              
+              <li class="contacts__list-item">
+                <a href="tel:+380936312232" class="contacts__link"
+                  ><img
+                    src="img/location.svg"
+                    alt="LibraMebel viber"
+                    class="contacts__icon"
+                  />
+                  Виробництво: Одеса, вул Онежська, 5</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__maps">
+            <div
+              class="contacts__map"
+              style="
+                max-width: 100%;
+                overflow: hidden;
+                color: #b0ff07;
+                width: 800px;
+                height: 300px;
+              "
+            >
+              <div
+                id="google-maps-display"
+                style="height: 100%; width: 100%; max-width: 100%"
+              >
+                <iframe
+                  style="height: 100%; width: 100%; border: 0"
+                  frameborder="0"
+                  src="https://www.google.com/maps/embed/v1/search?q=LibraМебель,+Odesa,+Odessa+Oblast,+Ukraine&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                ></iframe>
+              </div>
+              <a
+                class="embedded-map-code"
+                rel="nofollow"
+                href="https://www.bootstrapskins.com/themes"
+                id="grab-maps-authorization"
+                >premium bootstrap themes</a
+              ><style>
+                #google-maps-display img {
+                  max-height: none;
+                  max-width: none !important;
+                  background: none !important;
+                }
+              </style>
+            </div>
+            <div class="contacts__map">
+              <a
+                class="dg-widget-link"
+                href="http://2gis.ua/odessa/firm/70000001044831481/center/30.709812641143802,46.44643288870491/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
+                >Посмотреть на карте Одессы</a
+              >
+              <div class="dg-widget-link">
+                <a
+                  href="http://2gis.ua/odessa/center/30.709805,46.446431/zoom/16/routeTab/rsType/bus/to/30.709805,46.446431╎Libra Мебель, производственно-торговая фирма?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route"
+                  >Найти проезд до Libra Мебель, производственно-торговая
+                  фирма</a
+                >
+              </div>
+              <script
+                charset="utf-8"
+                src="https://widgets.2gis.com/js/DGWidgetLoader.js"
+              ></script>
+              <script charset="utf-8">
+                new DGWidgetLoader({
+                  width: 800,
+                  height: 300,
+                  borderColor: "#a3a3a3",
+                  pos: {
+                    lat: 46.44643288870491,
+                    lon: 30.709812641143802,
+                    zoom: 16,
+                  },
+                  opt: { city: "odessa" },
+                  org: [{ id: "70000001044831481" }],
+                });
+              </script>
+              <noscript
+                style="color: #b0ff07; font-size: 16px; font-weight: bold"
+                >Виджет карты использует JavaScript. Включите его в настройках
+                вашего браузера.</noscript
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="fullscreen fullscreen__OFF" id="modal">
         <button class="fullscreen__close-button" id="fullscreen__close-button">
@@ -772,9 +994,38 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#projects" class="footer__list-link">ПРОЄКТИ</a></li>
+          <li class="footer__item"><a href="#gallery" class="footer__list-link">ГАЛЕРЕЯ</a></li>
+          <li class="footer__item"><a href="#recommendations" class="footer__list-link">РЕКОМЕНДАЦІЇ</a></li>
+          <li class="footer__item"><a href="#about" class="footer__list-link">ПРО НАС</a></li>
+          <li class="footer__item"><a href="#contacts" class="footer__list-link">КОНТАКТИ</a></li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#projects" class="footer__list-link">0936312242</a></li>
+          <li class="footer__item"><a href="#gallery" class="footer__list-link">0971595643</a></li>
+          <li class="footer__item"><a href="#contacts" class="footer__list-link">viber</a></li>
+          <li class="footer__item"><a href="#about" class="footer__list-link">telegram</a></li>
+        </ul>
+
+        <ul class="footer__list">
+         
+          <li class="footer__item"><a href="#recommendations" class="footer__list-link">email</a></li>
+          <li class="footer__item"><a href="#contacts" class="footer__list-link">instagram</a></li>
+          <li class="footer__item"><a href="#contacts" class="footer__list-link">facebook</a></li>
+        </ul>
+
+
+      </div>
+      <p class="footer__copy">&copy; Elena Grasovskaya, 2023</p>
+      
+    </footer>
   </body>
   <script defer type="module" src="js/morePhoto.js"></script>
   <script defer type="module" src="js/switchTabs.js"></script>
   <script defer type="module" src="js/fullscreen.js"></script>
+  <script defer type="module" src="js/map.js"></script>
 </html>
