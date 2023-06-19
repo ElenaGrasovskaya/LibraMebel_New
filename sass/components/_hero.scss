@@ -1,18 +1,39 @@
-.hero  { 
+.hero {
   border-bottom: 3px solid $color-primary;
   position: relative;
-    &__header {
-      &--libra {
-        text-transform: uppercase;
-        font-size: 20rem;
-        font-weight: 100;
-        font-family: "Montserrat";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+  &__header {
 
-        color: $color-primary;
+    position: absolute;
+    top: 32vh;
+    left: 20vw;
+    width: 50vw;
+
+
+
+
+    @media only screen and (max-width: 750px) {
+      width: 90%;
+    }
+    @media only screen and (max-width: 900px) {
+      
+    }
+    @media only screen and (max-width: 1300px) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--libra {
+      text-transform: uppercase;
+      font-size: 20rem;
+      font-weight: 100;
+      font-family: "Montserrat";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      color: $color-primary;
     }
     &--subheading {
       text-transform: uppercase;
@@ -22,17 +43,9 @@
       position: absolute;
       top: 33.5vh;
       left: 51.5vw;
-      color: rgba($color-secondary-light, .8);
-  }
-  
-    }
-  
-    &__logo {
-      width: 50vw;
-      height: 30vh;
-      position: absolute;
-      top: 22vh;
-      left: 20vw;
+      color: rgba($color-secondary-light, 0.8);
     }
   }
+
   
+}

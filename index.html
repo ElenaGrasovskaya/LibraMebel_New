@@ -20,6 +20,33 @@
     <title>LibraМеблі - проєктуємо комфорт</title>
   </head>
   <body>
+    <div class="circle-navigation">
+      <input type="checkbox" class="circle-navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="circle-navigation__button">
+        <span class="circle-navigation__icon">&nbsp;</span>
+      </label>
+      <div class="circle-navigation__background" id="circle-navigation__background">&nbsp;</div>
+
+      <nav class="circle-navigation__nav">
+        <ul class="circle-navigation__list">
+          <li class="circle-navigation__item">
+            <a href="#projects" class="circle-navigation__link">ПРОЄКТИ</a>
+          </li>
+          <li class="circle-navigation__item">
+            <a href="#gallery" class="circle-navigation__link">ГАЛЕРЕЯ</a>
+          </li>
+          <li class="circle-navigation__item">
+            <a href="#recommendations"  class="circle-navigation__link">РЕКОМЕНДАЦІЇ</a>
+          </li>
+          <li class="circle-navigation__item">
+            <a href="#about" class="circle-navigation__link">ПРО НАС</a>
+          </li>
+          <li class="circle-navigation__item">
+            <a href="#contacts" class="circle-navigation__link">КОНТАКТИ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header>
       <nav>
         <ul class="navigation">
@@ -40,9 +67,10 @@
           </li>
         </ul>
       </nav>
+
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source src="img/video-bg.mp4" type="video/mp4" />
@@ -65,29 +93,31 @@
             </li>
 
             <li class="navigation__side-element navigation__side-element--1">
-              <a href="#" class="navigation__side-link">КУХНІ</a>
+              <a href="#gallery" class="navigation__side-link" id="hero-kitchen-tab">КУХНІ</a>
             </li>
             <li class="navigation__side-element navigation__side-element--2">
-              <a href="#" class="navigation__side-link">ШКАФИ</a>
+              <a href="#gallery" class="navigation__side-link" id="hero-wardrobe-tab1">ШКАФИ</a>
             </li>
             <li class="navigation__side-element navigation__side-element--3">
-              <a href="#" class="navigation__side-link">ПРИХОЖІ</a>
+              <a href="#gallery" class="navigation__side-link" id="hero-other-tab">ПРИХОЖІ</a>
             </li>
             <li class="navigation__side-element navigation__side-element--4">
-              <a href="#" class="navigation__side-link">ГАРДЕРОБНІ</a>
+              <a href="#gallery" class="navigation__side-link"  id="hero-wardrobe-tab2">ГАРДЕРОБНІ</a>
             </li>
             <li class="navigation__side-element navigation__side-element--4">
-              <a href="#" class="navigation__side-link">Меблі для ванної</a>
+              <a href="#gallery" class="navigation__side-link"  id="hero-bathroom-tab">Меблі для ванної</a>
             </li>
           </ul>
         </aside>
         <div class="hero__header">
           <img
-            src="img/libraHero.svg"
+            src="img/libraHero_poject.svg"
             alt="LibraMebel logo"
             class="hero__logo"
           />
+         
         </div>
+
         <div class="form">
           <form action="POST">
 
@@ -159,19 +189,19 @@
         <div class="projects-container">
           <div class="project-card">
             <img
-              src="img/projects/1_1.webp"
+              src="img/projects/7_1.webp"
               alt="Кухня красивая"
               class="project-card__photo"
             />
             <div class="project-card__name">
-              <h3 class="project-card__name-text">Кухня Жемчужина</h3>
+              <h3 class="project-card__name-text">Кухня ЖК Пьер</h3>
             </div>
             <ul class="project-card__description">
-              <li class="project-card__description-item">Столешница- ДСП</li>
-              <li class="project-card__description-item">Фасади ДСП</li>
-              <li class="project-card__description-item">Ручка Гола</li>
+              <li class="project-card__description-item">Стільниця - кварц</li>
+              <li class="project-card__description-item">Фасади МДФ фрезерований фарбований </li>
+              <li class="project-card__description-item">LED - підсвітлюівання</li>
             </ul>
-            <a href="#" class="project-card__link"
+            <a href="pages/project1.html" class="project-card__link"
               ><img
                 src="img/arrow.svg"
                 alt="Кухня красивая"
@@ -996,6 +1026,7 @@
 
     <footer class="footer">
       <div class="footer__container">
+        
         <ul class="footer__list">
           <li class="footer__item"><a href="#projects" class="footer__list-link">ПРОЄКТИ</a></li>
           <li class="footer__item"><a href="#gallery" class="footer__list-link">ГАЛЕРЕЯ</a></li>
@@ -1004,20 +1035,21 @@
           <li class="footer__item"><a href="#contacts" class="footer__list-link">КОНТАКТИ</a></li>
         </ul>
 
+        <div class="footer__logo">
+          <img src="img/New Logo.svg" alt="" class="footer__logo-img">
+          <img src="img/libraHero.svg" alt="" class="footer__logo-img">
+          <p class="footer__text">Проєктуємо комфорт</p>
+        </div>
+
         <ul class="footer__list">
           <li class="footer__item"><a href="#projects" class="footer__list-link">0936312242</a></li>
           <li class="footer__item"><a href="#gallery" class="footer__list-link">0971595643</a></li>
           <li class="footer__item"><a href="#contacts" class="footer__list-link">viber</a></li>
           <li class="footer__item"><a href="#about" class="footer__list-link">telegram</a></li>
-        </ul>
-
-        <ul class="footer__list">
-         
           <li class="footer__item"><a href="#recommendations" class="footer__list-link">email</a></li>
           <li class="footer__item"><a href="#contacts" class="footer__list-link">instagram</a></li>
           <li class="footer__item"><a href="#contacts" class="footer__list-link">facebook</a></li>
         </ul>
-
 
       </div>
       <p class="footer__copy">&copy; Elena Grasovskaya, 2023</p>

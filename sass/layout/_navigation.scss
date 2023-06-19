@@ -5,18 +5,29 @@
   width: calc(100% - 20rem);
   display: flex;
   justify-content: space-around;
-  list-style: none;  
+  list-style: none;
   background: rgba($color-black, 0.8);
   gap: 1rem;
   height: 7rem;
+ 
+  @media only screen and (max-width: 750px)
+  {
+    left: 0;
+    width: 100%;
+ }
+
+  
+ @include respond(phone) {
+  display: none;
+
+  }
+
 
   &__logo {
     width: 10rem;
     height: 10rem;
     margin: 1rem auto;
-
   }
-  
 
   &__element {
     display: block;
@@ -50,11 +61,15 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-    
-    &-link{
+
+    @media only screen and (max-width: 750px) {
+      display: none;
+    }
+
+    &-link {
       text-transform: uppercase;
       text-decoration: none;
-      transition: all .5;
+      transition: all 0.5;
       &:visited,
       &:link {
         color: $color-secondary;
@@ -62,19 +77,16 @@
       &:hover,
       &:active {
         color: $color-primary;
-       
       }
-
     }
     &-element {
       font-family: "Sofia Sans Condensed";
       font-size: 2.6rem;
       font-weight: 800;
-      &--1{
-        flex: 4
+      &--1 {
+        flex: 4;
       }
     }
-
   }
 }
 
@@ -92,6 +104,4 @@
     font-weight: 400;
     font-family: "Montserrat";
   }
- 
 }
-

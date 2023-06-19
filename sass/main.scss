@@ -17,8 +17,6 @@ Dark green: #28b485
 @import "base/utilities";
 
 @import "components/button";
-@import "components/composition";
-@import "components/feature-box";
 @import "components/project-card";
 @import "components/gallery";
 @import "components/gallery-card";
@@ -26,11 +24,11 @@ Dark green: #28b485
 @import "components/bg-video";
 @import "components/form";
 @import "components/hero";
-@import "components/popup";
 @import "components/fullscreen";
 @import "components/contacts";
 @import "components/about";
 @import "components/recommendations";
+@import "components/circle-navigation";
 
 @import "layout/header";
 @import "layout/grid";
@@ -38,6 +36,7 @@ Dark green: #28b485
 @import "layout/navigation";
 
 @import "pages/home";
+@import "pages/projects";
 
 
 

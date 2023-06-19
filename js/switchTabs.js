@@ -1,14 +1,14 @@
 import checkMaxPage from "./modules/checkMaxPage.js";
 import openModal from "./modules/openModal.js";
 (() => {
-    
+
     const tabHandler = (tabName) => {
 
         const galleryContainer = document.getElementById("gallery-container");
         console.log(tabName);
         let galleryChildren = [...galleryContainer.children];
         const itemQty = [...galleryContainer.children].length;
-     
+
         for (let i = itemQty - 1; i >= 0; --i) {
 
             galleryContainer.children[i].style.opacity = 0;
@@ -50,6 +50,17 @@ import openModal from "./modules/openModal.js";
     const closetTab = document.getElementById("wardrobe-tab");
     const bathroomTab = document.getElementById("bathroom-tab");
     const otherTab = document.getElementById("other-tab");
+    const kitchenTabHero = document.getElementById("hero-kitchen-tab");
+    const closetTabHero1 = document.getElementById("hero-wardrobe-tab1");
+    const closetTabHero2 = document.getElementById("hero-wardrobe-tab2");
+    const bathroomTabHero = document.getElementById("hero-bathroom-tab");
+    const otherTabHero = document.getElementById("hero-other-tab");
+
+    kitchenTabHero.addEventListener("click", () => tabHandler("kitchen"), false);
+    closetTabHero1.addEventListener("click", () => tabHandler("wardrobe"), false);
+    closetTabHero2.addEventListener("click", () => tabHandler("wardrobe"), false);
+    bathroomTabHero.addEventListener("click", () => tabHandler("bathroom"), false);
+    otherTabHero.addEventListener("click", () => tabHandler("other"), false);
 
     kitchenTab.addEventListener("click", () => tabHandler("kitchen"), false);
     closetTab.addEventListener("click", () => tabHandler("wardrobe"), false);
