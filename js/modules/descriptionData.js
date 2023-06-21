@@ -1,21 +1,14 @@
 const descriptionData = {
-    "/kitchen/page1/1_1.webp": `<li class="gallery-card__list-item">Столешница- ДСП</li>
-<li class="gallery-card__list-item">Фасади ДСП</li>
+    "/kitchen/page1/1_1.webp": `<li class="gallery-card__list-item">Стільниця - кварц</li>
+<li class="gallery-card__list-item">Фасади - ЛДСП EGGER</li>
 <li class="gallery-card__list-item">Ручка Гола</li>
-<li class="gallery-card__list-item">Столешница- ДСП</li>
-<li class="gallery-card__list-item">Фасади ДСП</li>
-<li class="gallery-card__list-item">Ручка Гола</li>`,
-    "/kitchen/page1/2_1.webp": `<li class="gallery-card__list-item">Столешница- ДСП</li>
-    <li class="gallery-card__list-item">Фасади ДСП</li>
+<li class="gallery-card__list-item">Фурнітура - BLUM</li>`,
+    "/kitchen/page1/2_1.webp": `<li class="gallery-card__list-item">Стільниця - ЛДСП EGGER</li>
+    <li class="gallery-card__list-item">Фасади - ЛДСП EGGER</li>
     <li class="gallery-card__list-item">Ручка Гола</li>
-    <li class="gallery-card__list-item">Столешница- ДСП</li>
-    <li class="gallery-card__list-item">Фасади ДСП</li>
-    <li class="gallery-card__list-item">Ручка Гола</li>`,
-    "/kitchen/page1/3_1.webp": `<li class="gallery-card__list-item">Столешница- ДСП</li>
-    <li class="gallery-card__list-item">Фасади ДСП</li>
-    <li class="gallery-card__list-item">Ручка Гола</li>
-    <li class="gallery-card__list-item">Столешница- ДСП</li>
-    <li class="gallery-card__list-item">Фасади ДСП</li>
+    <li class="gallery-card__list-item">Фурнітура - BLUM</li>`,
+    "/kitchen/page1/3_1.webp": `<li class="gallery-card__list-item">Стільниця - ЛДСП EGGER</li>
+    <li class="gallery-card__list-item">Фасади МДФ ламінований</li>
     <li class="gallery-card__list-item">Ручка Гола</li>`,
     "/kitchen/page1/4_1.webp": `<li class="gallery-card__list-item">Столешница- ДСП</li>
     <li class="gallery-card__list-item">Фасади ДСП</li>
@@ -46,7 +39,7 @@ const descriptionData = {
     <li class="gallery-card__list-item">Ручка Гола</li>
     <li class="gallery-card__list-item">Столешница- ДСП</li>
     <li class="gallery-card__list-item">Фасади ДСП</li>
-    <li class="gallery-card__list-item">Ручка Гола</li>`
+    <li class="gallery-card__list-item">Ручка Гола</li>`,
 
 
 };
