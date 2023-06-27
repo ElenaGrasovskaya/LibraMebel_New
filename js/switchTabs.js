@@ -1,5 +1,6 @@
 import checkMaxPage from "./modules/checkMaxPage.js";
 import openModal from "./modules/openModal.js";
+import addDescription from "./modules/addDescription.js";
 (() => {
 
     const tabHandler = (tabName) => {
@@ -8,6 +9,8 @@ import openModal from "./modules/openModal.js";
         console.log(tabName);
         let galleryChildren = [...galleryContainer.children];
         const itemQty = [...galleryContainer.children].length;
+
+        
 
         for (let i = itemQty - 1; i >= 0; --i) {
 
@@ -26,6 +29,8 @@ import openModal from "./modules/openModal.js";
                 newCard.innerHTML = galleryChildren[i].innerHTML
                     .replaceAll(new RegExp("kitchen|wardrobe|bathroom|other", "g"), `${tabName}`);
                 newCard.style.opacity = 0;
+                addDescription(newCard);
+
 
                 galleryContainer.appendChild(newCard);
             }
