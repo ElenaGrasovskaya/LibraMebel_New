@@ -4,14 +4,15 @@
   "description": "Furniture studio website",
   "main": "index.html",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "watch:sass": "node-sass sass/main.scss dist/css/style.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "concat:sass": "concat -o css/style.concat.css css/style.comp.css",
-    "prefix:sass": "postcss --use autoprefixer -b 'last 5 versions' css/style.concat.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass concat:sass prefix:sass compress:css"
+    "compile:sass": "node-sass sass/main.scss dist/css/style.comp.css",
+    "concat:sass": "concat -o dist/css/style.concat.css dist/css/style.comp.css",
+    "prefix:sass": "postcss --use autoprefixer -b 'last 5 versions' dist/css/style.concat.css -o dist/css/style.prefix.css",
+    "compress:css": "node-sass dist/css/style.prefix.css dist/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:sass prefix:sass compress:css",
+    "build": "webpack --mode production"
   },
   "author": "Elena Grasovskaya",
   "license": "ISC",
@@ -20,9 +21,9 @@
     "concat": "^1.0.3",
     "node-sass": "^8.0.0",
     "npm-run-all": "^4.1.1",
-    "postcss-cli": "^10.1.0"
-  },
-  "dependencies": {
-    "concat": "^1.0.3"
+    "postcss-cli": "^10.1.0",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.9.0"
   }
 }
