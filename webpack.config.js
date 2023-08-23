@@ -12,7 +12,7 @@ module.exports = {
         projFullScreen: path.resolve(__dirname, "src/projFullScreen.js")
     },
     output: {
-        path: path.resolve(__dirname, "dist/js"),
+        path: path.resolve(__dirname, "dist"),
         filename: '[name].js'
     }
 };
