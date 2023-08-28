@@ -12,6 +12,12 @@
           @include respond(phone-small) {
             width: 100%;
           }
+
+          &-btn {
+            @include respond(phone-small) {
+              border-radius: none;
+            }
+          }
     
     }
     &__container {

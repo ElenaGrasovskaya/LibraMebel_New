@@ -25,6 +25,13 @@
     height: 85%;
     transition: all 0.5s;
     border-radius: 0.5rem;
+
+    
+    @include respond(tab-port) {
+      width: 100%;
+      height: auto;
+    }
+
   }
   &__thumbnails {
     display: flex;
@@ -34,6 +41,12 @@
     align-content: center;
     width: fit-content;
     margin: 0 auto;
+
+    @include respond(tab-port) {
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
 
     &-item {
 
